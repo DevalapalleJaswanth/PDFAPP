@@ -2,8 +2,8 @@ import { useState, useEffect } from "react";
 
 import { PDFDocument, StandardFonts, rgb } from "pdf-lib";
 import { BrowserRouter as Router, Route, Routes, Link } from "react-router-dom";
-import PDFFormBuilder from "./pdfV2";
-import PDFPreview from "./preview";
+import PDFFormBuilder from "./pdfBuilder";
+import PDFPreview from "./pdfPreview";
 
 export default function App() {
   return (
