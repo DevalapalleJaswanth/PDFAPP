@@ -8,9 +8,11 @@ const PDFBuilder = () => {
   const savedPages = JSON.parse(localStorage.getItem("pdf_pages"));
   const savedElements = JSON.parse(localStorage.getItem("pdf_elements"));
   const [elements, setElements] = useState(
-    savedElements.length > 0 ? savedElements : []
+    savedElements && savedElements?.length > 0 ? savedElements : []
   );
-  const [pages, setPages] = useState(savedPages.length > 0 ? savedPages : [0]);
+  const [pages, setPages] = useState(
+    savedPages && savedPages?.length > 0 ? savedPages : [0]
+  );
   const [selectedElement, setSelectedElement] = useState(null);
 
   useEffect(() => {
