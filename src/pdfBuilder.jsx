@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from "react";
 import { Rnd } from "react-rnd";
-import ParameterPanel from "./parameterpanel";
+import ParameterPanel from "./parameterPanel";
 import RenderElement from "./elementRenderer";
 import ElementsList from "./elementsPanel";
 
